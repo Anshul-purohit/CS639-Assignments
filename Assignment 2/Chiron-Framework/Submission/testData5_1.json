@@ -1,0 +1,20 @@
+{
+    "1": {
+        "params": "{'x': 5, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 2]",
+        "pc": "[0]",
+        "pcEval": "[False]",
+        "symbEnc": "{'x': 'x + c1 + c2', 'c1': 'c1', 'c2': 'c2'}",
+        "constraints": "[Not(x >= 100)]"
+    },
+    "2": {
+        "params": "{'x': 100, 'c1': 1, 'c2': 1}",
+        "constparams": "[':c1', ':c2']",
+        "coverage": "[0, 1, 2]",
+        "pc": "[0]",
+        "pcEval": "[True]",
+        "symbEnc": "{'x': 'x + c1 + c2 + c1 + c2', 'c1': 'c1', 'c2': 'c2'}",
+        "constraints": "[x >= 100]"
+    }
+}
